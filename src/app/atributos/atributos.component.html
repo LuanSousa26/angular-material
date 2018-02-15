@@ -1,0 +1,73 @@
+<mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            <strong>Dados</strong>
+        </mat-panel-title>
+        <mat-panel-description style="padding-left:90px">
+          Contêm os dados cadastrais da operadora
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <input matInput placeholder="C.N.P.J">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput placeholder="Inscrição Estadual">
+      </mat-form-field>
+
+      <mat-form-field>
+          <mat-select placeholder="Tipo de Operadora">
+              <mat-option value="ADM">ADMINISTRADO</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <strong>Regulação Operadora</strong>
+        </mat-panel-title>
+        <mat-panel-description>
+            Contêm os dados para a regulação da operadora
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <section class="example-section">
+          <mat-checkbox class="example-margin">Vai efetuar Regulação</mat-checkbox>
+          <mat-checkbox class="example-margin">Vai autorizar</mat-checkbox> 
+          <mat-checkbox class="example-margin">Enviar email em senhas liberadas</mat-checkbox>  
+          <mat-checkbox class="example-margin">Gerar outro plano</mat-checkbox>
+        </section>
+         
+        <mat-select matInput placeholder="Ramo Operadora" style="padding-top:30px">
+          <mat-option value="NF">NAO INFORMADO</mat-option>
+        </mat-select>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <strong>Alçada Mínima</strong>
+          </mat-panel-title>
+          <mat-panel-description>
+              Contas Médicas e Reembolso
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-form-field>
+            <input matInput placeholder="Valor" type="number" class="example-right-align">
+            <span matPrefix>$&nbsp;</span>
+            <span matSuffix>.00</span>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-select>
+              <mat-option value="">CH - 1 , 5</mat-option>
+            </mat-select>
+          </mat-form-field>
+      </mat-expansion-panel>
+   
+  </mat-accordion>
+
+
+
+  

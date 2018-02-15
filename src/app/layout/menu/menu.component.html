@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-card>
+<mat-card-title>Operadora</mat-card-title>
+  <mat-form-field class="campos">
+    <input matInput placeholder="Razão Social" required>
+  </mat-form-field>
+
+  <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Início">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+  <mat-form-field>
+    <input matInput [matDatepicker]="termino" placeholder="Término">
+    <mat-datepicker-toggle matSuffix [for]="termino"></mat-datepicker-toggle>  
+    <mat-datepicker #termino></mat-datepicker>
+  </mat-form-field>  
+</mat-card>
+  
